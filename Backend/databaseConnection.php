@@ -6,8 +6,6 @@ error_reporting(E_ALL);
 
 $mysqli = new mysqli("localhost:3306",  "root", "Raulito-12", "Restaurant");
 
-var_dump(getenv("DB_USER"));
-
 if($mysqli->connect_errno){
     echo "Fallo al conectar a MySQL:(".
     $mysqli->connect_errno  . ")" .
